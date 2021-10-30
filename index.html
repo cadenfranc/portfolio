@@ -7,45 +7,60 @@
         <meta name='description' content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     </head>
-    <body>
+    <body class='homepage'>
         <header>
             <a href='index.html' id='logo_link'>
                 <img src='images/sunrise.png' class='logo' alt='Logo'>
             </a>
             <nav>
-                <a href='index.html'>Home</a>
-                <a href='about.html'>ABOUT</a>
-                <a href='portfolio.html'>PORTFOLIO</a>
-                <a href='contact.html'>CONTACT</a>
+                <a href='index.html' class='homepage-nav'>Home</a>
+                <a href='about.html' class='homepage-nav'>ABOUT</a>
+                <a href='portfolio.html' class='homepage-nav'>PORTFOLIO</a>
+                <a href='contact.html' class='homepage-nav'>CONTACT</a>
             </nav>
         </header>
         <main>
-            <section class='title'>
-                <h1 class='main-title' data-text="Caden Franc">Caden Franc</h1>
-                <p class='sub-title'>Data Scientist / Developer</p>
-                <div class='button'>
-                    <a class='white-button' href='#'>HIRE ME</a>
-                    <a class='gray-button' href='#'>HISTORY</a>
-                </div>
+            <section class='primary'>
+                <section class='primary-text'>
+                    <p class='subtitle'>Hi there, my name is </p>
+                    <h1 class='title' data-text="Caden Franc">CADEN FRANC</h1>
+                    <p class='subtitle'>and I'm a Data Scientist / Developer.</p>
+                    <div class='button'>
+                        <a class='white-button' href='#'>HIRE ME</a>
+                        <a class='gray-button' href='#'>HISTORY</a>
+                    </div>
+                </section>
+                <!-- <iframe width="640" height="380" src="https://www.youtube.com/embed/qhkvpjBBuxM?autoplay=1"></iframe> -->
             </section>
-            <section class='demo'>
-                <iframe width="640" height="380" src="https://www.youtube.com/embed/qhkvpjBBuxM?autoplay=1"></iframe>
+            <section class='social-media'>
+                <a href='https://www.linkedin.com/in/caden-franc-cf/' class='social-logo'>
+                    <i class='fab fa-linkedin-in fa-2x fa-fw'></i>
+                </a>
+                <a href='https://github.com/cadenfranc' class='social-logo'>
+                    <i class='fab fa-github fa-2x fa-fw'></i>
+                </a>
+                <a href='https://www.youtube.com/channel/UCnoOaJcYnqyKZrjuFbO_YFg' class='social-logo'>
+                    <i class='fab fa-youtube fa-2x fa-fw'></i>
+                </a>
+                <a href='#' class='social-logo'>
+                    <i class='fab fa-discord fa-2x fa-fw'></i>
+                </a>
+            </section>
+            <section class='secondary'>
+                <section class='secondary-text'>
+                    <h1 class='secondary-title'>A student at heart.</h1>
+                    <p class='secondary-subtitle'>
+                        This is a subheader that will describe information<br>
+                        about myself in a half paragraph sentence that looks<br>
+                        something like this.
+                    </p>
+                </section>     
             </section>
         </main>
-        <section class='second-main'>
-            <h1 class='second-main-title'>Student at heart.</h1>
-            <p class='second-subtitle'>This is a subheader.</p>
-        </section>
         <footer>
-            <div class='social-media'>
-                <a href='index.html' id='logo_link'>
-                <img src='https://via.placeholder.com/50' class='social-logo' alt='LinkedIn'></a>
-                <a href='https://github.com/cadenfranc' id='logo_link'>
-                <img src='images/github.png' class='social-logo' alt='GitHub'></a>
-                <a href='index.html' id='logo_link'>
-                <img src='https://via.placeholder.com/50' class='social-logo' alt='Facebook'></a>
-            </div>
+            This is placeholder text.
         </footer>
     </body>
 </html>

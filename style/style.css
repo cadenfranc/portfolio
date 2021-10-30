@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 
-
 body {
-    background-image: url('/portfolio/images/background.png');
     font-family: 'Nunito', sans-serif;
+}
+
+.homepage {
+    background-image: url('/portfolio/images/background.png');
 }
 
 header {
@@ -15,12 +17,6 @@ header {
 .logo {
     height: 50px;
     width: 60px;
-    padding: 20px;
-}
-
-.social-logo {
-    height: 50px;
-    width: 50px;
     padding: 20px;
 }
 
@@ -39,8 +35,12 @@ nav a {
     overflow: hidden;  
 }
 
+.homepage-nav:hover {
+    color:white;
+}
+
 nav a:hover {
-    color: white;
+    color: lightgray;
 }
 
 nav a::before {
@@ -62,36 +62,40 @@ nav a:hover::before {
 }
 
 main {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin-top: 100px;
+    
 }
 
 footer {
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
+    background-color: rgba(0,0,0,0.5);
     box-sizing: border-box;
-    padding: 10px;
+    color: white;
     display: flex;
     justify-content: space-around;
 }
 
-.title {
-    grid-column: 1;
-    text-align: left;
-    width: 100%;
-    margin-left: 25%;
-    margin-top: 20px;
+.primary {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 100px;
 }
 
-.main-title {
+.primary-text {
+    grid-column: 1;
+    margin: auto;
+    text-align: left;
+    width: 600px;
+}
+
+.title {
     font-family: 'Roboto', sans-serif;
     font-size: 4.5em;
+    margin-top: -10px;
+    margin-bottom: -10px;
 }
 
-.sub-title {
+.subtitle {
     font-size: 1.5em;
-    margin-top: -50px;
+    margin-left: 5px;
 }
 
 .button {
@@ -127,30 +131,63 @@ footer {
     color: white;
 }
 
-iframe {
+/* iframe {
     grid-column: 2;
-    margin-bottom: 75px;
-    margin-left: 75px;
-    box-shadow: 0px 0px 25px gray;
+    box-shadow: 0px 0px 200px white;
     border: black;
-}
+    border-radius: 2px;
+} */
 
-.second-main {
-    margin-top: 100px;
-    height: 700px;
-    width: 100%;
+.secondary {
     background-color: white;
     font-family: 'Roboto', sans-serif;
+    grid-column: 1/3;
+    margin: auto;
+    padding-bottom: 200px;
     text-align: center;
+    width: 100%;
 }
 
-.second-main-title {
+#about-title {
+    margin-top: -200px;
+}
+
+.secondary-text {
+    margin: auto;
+}
+
+.secondary-title {
     font-size: 5em;
     padding-top: 300px;
 }
 
-.second-subtitle {
+.secondary-subtitle {
     font-size: 1.5em;
     margin-top: -50px;
     font-family: 'Nunito', sans-serif;
 }
+
+.social-media {
+    margin-right: 50px;
+    text-align: right;
+    grid-row: 2;
+}
+
+i {
+    color:#00000050;
+    transform: translateY(6px);
+    transition-property: transform;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-out;
+}
+
+i:hover {
+    color:black;
+    transform: translateY(0);
+}
+
+.social-logo {
+    text-decoration: none;
+    padding: 10px;
+}
+
