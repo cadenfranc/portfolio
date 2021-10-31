@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     </head>
     <body class='homepage'>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/rellax/1.7.1/rellax.min.js'></script>
         <header>
             <a href='index.html' id='logo_link'>
                 <img src='images/sunrise.png' class='logo' alt='Logo'>
@@ -34,7 +35,7 @@
                 </section>
                 <!-- <iframe width="640" height="380" src="https://www.youtube.com/embed/qhkvpjBBuxM?autoplay=1"></iframe> -->
             </section>
-            <section class='social-media rellax' data-rellax-speed=4>
+            <section class='social-media'>
                 <a href='https://www.linkedin.com/in/caden-franc-cf/' class='social-logo'>
                     <i class='fab fa-linkedin-in fa-2x fa-fw'></i>
                 </a>
@@ -50,7 +51,8 @@
             </section>
 
             <img id='profile' class='rellax' data-rellax-percentage=0.5 src='/images/profile.png'>
-            
+            <script> var rellax = new Rellax('.rellax'); </script>
+
             <section class='secondary'>
                 <section class='secondary-text'>
                     <h1 class='secondary-title rellax' data-rellax-percentage=1>A student at heart.</h1>
@@ -65,9 +67,5 @@
         <footer>
             This is placeholder text.
         </footer>
-        <script src='https://cdnjs.cloudflare.com/ajax/libs/rellax/1.7.1/rellax.min.js'></script>
-        <script>
-            var rellax = new Rellax('.rellax');
-        </script>
     </body>
 </html>
