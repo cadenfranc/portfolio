@@ -138,6 +138,17 @@ footer {
     border-radius: 2px;
 } */
 
+img#profile {
+    width: 363px;
+    height: 561px;
+    position: absolute;
+    right: 350px;
+    left: 50%;
+    top: 130px;
+    opacity: 0.85;
+    z-index: -1;
+}
+
 .secondary {
     background-color: white;
     font-family: 'Roboto', sans-serif;

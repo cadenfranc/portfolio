@@ -22,7 +22,7 @@
             </nav>
         </header>
         <main>
-            <section class='primary'>
+            <section class='primary rellax' data-rellax-speed=4>
                 <section class='primary-text'>
                     <p class='subtitle'>Hi there, my name is </p>
                     <h1 class='title' data-text="Caden Franc">CADEN FRANC</h1>
@@ -34,7 +34,7 @@
                 </section>
                 <!-- <iframe width="640" height="380" src="https://www.youtube.com/embed/qhkvpjBBuxM?autoplay=1"></iframe> -->
             </section>
-            <section class='social-media'>
+            <section class='social-media rellax' data-rellax-speed=4>
                 <a href='https://www.linkedin.com/in/caden-franc-cf/' class='social-logo'>
                     <i class='fab fa-linkedin-in fa-2x fa-fw'></i>
                 </a>
@@ -48,10 +48,13 @@
                     <i class='fab fa-discord fa-2x fa-fw'></i>
                 </a>
             </section>
+
+            <img id='profile' class='rellax' data-rellax-percentage=0.5 src='/images/profile.png'>
+            
             <section class='secondary'>
                 <section class='secondary-text'>
-                    <h1 class='secondary-title'>A student at heart.</h1>
-                    <p class='secondary-subtitle'>
+                    <h1 class='secondary-title rellax' data-rellax-percentage=1>A student at heart.</h1>
+                    <p class='secondary-subtitle rellax' data-rellax-percentage=0.7>
                         This is a subheader that will describe information<br>
                         about myself in a half paragraph sentence that looks<br>
                         something like this.
@@ -62,5 +65,9 @@
         <footer>
             This is placeholder text.
         </footer>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/rellax/1.7.1/rellax.min.js'></script>
+        <script>
+            var rellax = new Rellax('.rellax');
+        </script>
     </body>
 </html>
