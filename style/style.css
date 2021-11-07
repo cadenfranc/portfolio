@@ -243,3 +243,19 @@ img.portfolio-img {
     padding: 10px;
     margin: 0 auto;
 }
+
+.temp-info {
+    margin: 0 auto;
+    width: 600px;
+    font-family: 'Nunito', sans-serif;
+}
+
+.temp-img {
+    width: 400px;
+    height: 225px;
+}
+
+.temp-img-p {
+    width: 225px;
+    height: 300px;
+}
