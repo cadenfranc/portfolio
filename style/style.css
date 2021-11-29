@@ -247,21 +247,6 @@ i:hover {
     grid-row: 1/3;
 }
 
-img.portfolio-img {
-    width: 100%;
-}
-
-.portfolio-section {
-    background-color: gray;
-}
-
-.portfolio-img-label {
-    color: white;
-    background-color: rgba(0,0,0,0.5);
-    padding: 10px;
-    margin: 0 auto;
-}
-
 .temp-info {
     margin: 0 auto;
     width: 600px;
@@ -277,3 +262,48 @@ img.portfolio-img {
     width: 225px;
     height: 300px;
 }
+
+img.portfolio-img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+}
+
+.portfolio-section {
+    background-color: gray;
+    position: relative;
+}
+
+.portfolio-section:hover .overlay {
+    opacity: 1;
+}
+
+.portfolio-img-label {
+    height: 100%;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    margin: 0 auto;
+    position: absolute;
+    text-align: center;
+
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
