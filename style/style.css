@@ -173,6 +173,38 @@ img#profile {
     margin-top: -200px;
 }
 
+.about-info h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+    margin-bottom: -10px;
+    text-align: center;
+}
+
+.about-info p {
+    text-align: center;
+    padding: 20px;
+}
+
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+
+.about-info {
+    justify-content: center;
+}
+
+.img-container {
+    display: block;
+    text-align: center;
+}
+
+.about-info img {
+    margin-bottom: 50px;
+    width: 300px;
+}
+
 .secondary-text {
     margin: auto;
 }
