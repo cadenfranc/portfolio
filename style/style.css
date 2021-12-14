@@ -18,9 +18,13 @@ footer {
     background-color: rgba(0,0,0,0.5);
     box-sizing: border-box;
     color: white;
-    display: flex;
-    justify-content: space-around;
-    padding: 15px;
+    padding: 20px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    float: right;
 }
 
 i {
